@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-400 h-screen flex">
+    <div class="bg-white w-96 rounded-lg m-auto items-center justify-center p-4">
+        <h1 class="text-2xl font-bold">Tabela IMC</h1>
+        <table class="w-full mt-4">
+            <thead>
+                <tr class="text-left">
+                    <th>IMC</th>
+                    <th>Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Menos do que 18,5</td>
+                    <td>Abaixo do peso</td>
+                </tr>
+                <tr>
+                    <td>Entre 18,5 e 24,9</td>
+                    <td>Peso Normal</td>
+                </tr>
+                <tr>
+                    <td>Entre 25 e 29,9</td>
+                    <td>Sobrepeso</td>
+                </tr>
+                <tr>
+                    <td>Entre 30 e 34,9</td>
+                    <td>Obesidade grau 1</td>
+                </tr>
+                <tr>
+                    <td>Entre 35 e 39,9</td>
+                    <td>Obesidade grau 2</td>
+                </tr>
+                <tr>
+                    <td>Mais do que 40</td>
+                    <td>Obesidade grau 3</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="mt-4">
+            <h1 class="text-2xl font-bold">Calcule seu IMC</h1>
+            <form id="form">
+                <label class="space-y-2" for="">
+                    <div>
+                        <p>Peso: </p>
+                        <input class="border-2 rounded-lg w-full pl-1" name="weight" type="text" required>
+                    </div>
+                    <div>
+                        <p>Altura: </p>
+                        <input class="border-2 rounded-lg w-full pl-1" name="height" type="text" required>
+                    </div>
+                    <button class="border-2 rounded-lg h-9 w-full bg-blue-400 hover:cursor-pointer" type="submit">Calcular IMC</button>
+                </label>
+            </form>
+            <div class="font-bold flex flex-col">
+                <span id="imc"></span>
+                <span id="result"></span>
+            </div>
+        </div>
+    </div>
+
+<script src="./assets/js/index.js"></script>
+</body>
+</html>
