@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-400 flex h-screen">
+    <div class="bg-white w-96 rounded-lg mx-auto my-auto">
+        <p class="font-bold text-2xl m-3">Meu Timer</p>
+        <form name="form_main">
+
+            <p class="text-5xl m-3"><span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span id="millisecond">000</span></p>
+            <div class="m-3 flex space-x-3">
+                <button class="border-2 border-black rounded-lg p-1 shadow-xl" type="button" name="start">Iniciar</button>
+                <button class="border-2 border-black rounded-lg p-1 shadow-xl" type="button" name="pause">Pausar</button>
+                <button class="border-2 border-black rounded-lg p-1 shadow-xl" type="button" name="reset">Zerar</button>
+            </div>
+        </form>
+        </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
